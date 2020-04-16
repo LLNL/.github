@@ -1,6 +1,6 @@
 ---
 title: "Repo X.X.X Released"
-tags: new-release
+categories: new-release
 ---
 
 Repo (GH link) is ... a few sentences from the repo's README or documentation. The goal is to explain what the software does, what problem it solves, or what use case it serves. File naming convention is yyyy-mm-dd-repo-x.x.x.md where X.X.X is the version number.
