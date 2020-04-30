@@ -1,6 +1,6 @@
 ---
 title: "Headline"
-tags: event
+categories: event
 ---
 
 Paragraph(s) summarizing what the event is (name/nickname), where it will be held, and what its purpose is. Indicate that LLNL staff are attending and any other contextual information. Link to a list of LLNL's presence on committees or in the technical program, if available, or link to the event's technical program. File naming convention is yyyy-mm-dd-title.md.
