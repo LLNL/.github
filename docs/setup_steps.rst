@@ -10,11 +10,11 @@ The process of creating a Read the Docs (RtD) site is widely documented (see als
 
 The basic steps are:
 
-A. Create repo on GitHub or create local directory to existing repo.
-B. Install Sphinx.
-C. Build and configure doc files (you must be in the docs directory to run ``pipenv run make html``).
-D. Set up GitHub and RtD webhook integration.
-E. Create .rst files.
+A. Create repo on GitHub or create local directory to existing repo
+B. Install Sphinx
+C. Build and configure doc files
+D. Set up GitHub and RtD webhook integration
+E. Create .rst files
 
 ------------------------
 A. Create Repo/Directory
@@ -25,17 +25,17 @@ The instructions below assume that developers understand step *A*.
 -----------------
 B. Install Sphinx
 -----------------
-1. Create a **docs** folder in your project. Then ``cd docs`` to complete most of the remaining steps (exceptions are noted below).
+1. Create a **/docs** folder in your project. Then ``cd docs`` to complete most of the remaining steps (exceptions are noted below).
 2. Install `RtD template from GitHub <https://github.com/readthedocs/sphinx_rtd_theme>`_ using Sphinx (``pipenv install sphinx-rtd-theme``).
 3. Initiate Sphinx quickstart (``pipenv run sphinx-quickstart``). Answer the questions that follow installation, such as selecting No for setting up build and source separately.
 4. Move the makefile into the /docs folder if it's not there already.
 5. Confirm the Sphinx version (``pipenv run sphinx-build --version``).
-6. Confirm that docs can build locally (``pipenv run make html``).
+6. Confirm that docs can build locally (``pipenv run make html``). You must be in the /docs directory for this to work.
 
 --------------------------------
 C. Build and Configure Doc Files
 --------------------------------
-1. Update the **conf.py** file. For instance, you can change the RtD theme (``html_theme``). In the General Configuration section, add name of master .rst file::
+1. Update the **conf.py** file. For instance, you can change the RtD theme (``html_theme``). In the General Configuration section, add the name of master .rst file::
 
     # Tells Sphinx the name of the master .rst file.
     master_doc = 'index'
@@ -57,7 +57,7 @@ C. Build and Configure Doc Files
 --------------------------------
 D. Establish Webhook Integration
 --------------------------------
-This process generates a ``readthedocs.io`` URL for your project, which you can then link to in your repo's README file.
+This process generates a **readthedocs.io** URL for your project, which you can then link to in your repo's README file.
 
 1. Log into the `RtD website <https://readthedocs.org/>`_ via your GitHub account. You will have to go through an account verification process the first time.
 2. My Projects > Import a Project > select your repo. You may need to refresh the list or filter out an organization.
