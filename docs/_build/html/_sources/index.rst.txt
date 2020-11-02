@@ -1,20 +1,14 @@
-.. RtD Template for LLNL Projects documentation master file, created by
-   sphinx-quickstart on Thu Aug  6 11:34:44 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Copyright 2020 Lawrence Livermore National Security, LLC
 
-Welcome to RtD Template for LLNL Projects's documentation!
-==========================================================
+=================
+LLNL RtD Template
+=================
+
+This documentation site and the files associated with the `.github repo <https://github.com/LLNL/.github>`_ are designed to be used as a template for developers who are new to Read the Docs (RtD) documentation.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   setup_steps
+   resources
