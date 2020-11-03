@@ -2,7 +2,7 @@
 title: "Release Resources and Template"
 ---
 
-Releases are the mechanism for packaging a set of features, bug fixes, and other modifications to a software repository. This page provides information about compiling (tagging) a release and its release notes, as well as examples and other web resources on this topic.
+*Releases* are the mechanism for packaging a set of features, bug fixes, and other modifications to a software repository. This page provides information about compiling (tagging) a release and its release notes, as well as examples and other web resources on this topic.
 
 ## Tagging a Release
 
@@ -28,6 +28,7 @@ GitHub allows you to [draft release notes directly in the UI](https://help.githu
 *Note:* Be as clear as possible in your release notes so users know what they're getting. Ideally, this means each commit message is unique and direct. You may also want to organize your notes into categories such as Enhancements, Bug Fixes, Deletions, etc. to help users navigate a long list of changes or highly detailed notes.
 
 ## Resources
+
 * Start here: [Releasing projects on GitHub](https://help.github.com/en/github/administering-a-repository/releasing-projects-on-github)
 * [About releases](https://help.github.com/en/github/administering-a-repository/about-releases)
 * Basic: [Managing releases in a repository](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository)
