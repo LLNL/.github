@@ -2,7 +2,7 @@
 title: "Notice"
 ---
 
-The *notice* file houses LLNL auspice and disclaimer statements. Just as you would need to include this information on an LLNL-authored paper prior to publication in a scientific journal, be sure to include it in your software repo. The file should be plain text (*not* `.md` like this file) and reside in the top level of your repo's directory.
+The *notice* file houses LLNL auspice and disclaimer statements. Just as you would need to include this information on an LLNL-authored paper prior to publication in a scientific journal, be sure to include it in your software repo. The file should be plain text (*not* `.md` like this file) and reside in the top level of your repo's directory with an all-caps file name. Additional context is available on the software.llnl.gov [Licenses page](https://software.llnl.gov/about/licenses/).
 
 ## Example Notice
 
