@@ -8,7 +8,7 @@ Pull requests provide the mechanism for updating code in your software repositor
 
 If you are creating a PR for another repo, be mindful of their contributing guidelines and strive for clarity in your commits. Many projects have strict requirements for PRs and may provide a [detailed checklist](https://github.com/mfem/mfem/blob/master/CONTRIBUTING.md#pull-request-checklist) that puts the onus on contributors to ensure that new code is necessary, compliant, and able to pass testing.
 
-It's also a good idea to review or search the list of existing open PRs to see if someone else has already addressed the changes you're proposing. To open a new PR, navigate to the repo's Issues page (`/pulls`) and click the green button. (Pushing your changes at the command line or via a desktop app will automatically initiate the comparison and present a green button on the repo's home page.)
+It's also a good idea to review or search the list of existing open PRs to see if someone else has already addressed the changes you're proposing. To open a new PR, navigate to the repo's Pull Requests page (`/pulls`) and click the green button. (Pushing your changes at the command line or via a desktop app will automatically initiate the comparison and present a green button on the repo's home page.)
 
 **Compare:** Select your `fork:branch` to compare against `repo:master` (or default branch)
 
