@@ -2,10 +2,11 @@
 title: "Notice"
 ---
 
-The *notice* file houses LLNL auspice and disclaimer statements. Just as you would need to include this information on an LLNL-authored paper prior to publication in a scientific journal, be sure to include it in your software repo. The file should be plain text (*not* `.md` like this file) and reside in the top level of your repo's directory with an all-caps file name. Additional context is available on the software.llnl.gov [Licenses page](https://software.llnl.gov/about/licenses/).
+The *notice* file houses LLNL auspice and disclaimer statements. Just as you would need to include this information on an LLNL-authored paper prior to publication in a scientific journal, be sure to include it in your software repo. The file should be plain text (*not* `.md` like this file) and reside in the top level of your repo's directory with an all-caps file name (`NOTICE`). Additional context is available on the software.llnl.gov [Licenses page](https://software.llnl.gov/about/licenses/).
 
 ## Example Notice
 
+```text
 This work was produced under the auspices of the U.S. Department of Energy by
 Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 
@@ -22,3 +23,4 @@ States Government or Lawrence Livermore National Security, LLC. The views and
 opinions of authors expressed herein do not necessarily state or reflect those
 of the United States Government or Lawrence Livermore National Security, LLC,
 and shall not be used for advertising or product endorsement purposes.
+```

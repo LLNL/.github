@@ -10,7 +10,7 @@ If you are creating a PR for another repo, be mindful of their contributing guid
 
 It's also a good idea to review or search the list of existing open PRs to see if someone else has already addressed the changes you're proposing. To open a new PR, navigate to the repo's Pull Requests page (`/pulls`) and click the green button. (Pushing your changes at the command line or via a desktop app will automatically initiate the comparison and present a green button on the repo's home page.)
 
-**Compare:** Select your `fork:branch` to compare against `repo:master` (or default branch)
+**Compare:** Select your `fork:branch` to compare against `repo:main` (or default branch)
 
 **Title:** Clearly worded statement or phrase (e.g., `Created a page that explains how to open PRs` or `New dependency graphs`)
 
