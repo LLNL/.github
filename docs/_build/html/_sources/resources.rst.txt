@@ -2,9 +2,9 @@
 
 .. _resources:
 
-=========
-Resources
-=========
+======================
+RtD & Sphinx Resources
+======================
 
 These sites are good places to learn about Read the Docs (RtD), Sphinx, and all the things you can do in .rst files:
 
