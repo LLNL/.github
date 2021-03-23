@@ -28,9 +28,9 @@ B. Install Sphinx
 1. Create a **/docs** folder in your project. Then ``cd docs`` to complete most of the remaining steps (exceptions are noted below).
 2. Install `RtD template from GitHub <https://github.com/readthedocs/sphinx_rtd_theme>`_ using Sphinx (``pipenv install sphinx-rtd-theme``).
 3. Initiate Sphinx quickstart (``pipenv run sphinx-quickstart``). Answer the questions that follow installation, such as selecting No for setting up build and source separately.
-4. Move the makefile into the /docs folder if it's not there already.
+4. Move the makefile into the ``/docs`` folder if it's not there already.
 5. Confirm the Sphinx version (``pipenv run sphinx-build --version``).
-6. Confirm that docs can build locally (``pipenv run make html``). You must be in the /docs directory for this to work.
+6. Confirm that docs can build locally (``pipenv run make html``). You must be in the /docs directory for this to work. Unlike viewing a site on a local port, where newly saved changes auto-regenerate the site, you will need to run this command after every saved change in order to see the new change.
 
 --------------------------------
 C. Build and Configure Doc Files
@@ -40,8 +40,8 @@ C. Build and Configure Doc Files
     # Tells Sphinx the name of the master .rst file.
     master_doc = 'index'
 
-2. Create the **.gitignore** file (``touch .gitignore``) so your commits will include only source files, not the HTML-rendered files (`instructions <https://help.github.com/en/articles/ignoring-files>`_).
-3. Create the **requirements.txt** file to specify dependency versions (`instructions <https://docs.readthedocs.io/en/stable/config-file/v2.html?highlight=requirements.txt#requirements-file>`_). This file usually contains information like this::
+2. Create the **.gitignore** file (``touch .gitignore``) so your commits will include only source files, not the HTML-rendered files (`GitHub instructions <https://help.github.com/en/articles/ignoring-files>`_).
+3. Create the **requirements.txt** file to specify dependency versions (`RtD instructions <https://docs.readthedocs.io/en/stable/config-file/v2.html?highlight=requirements.txt#requirements-file>`_). This file usually contains information like this::
 
     # These dependencies should be installed using pip in order
     # to build the documentation.
@@ -91,3 +91,27 @@ All documentation files should contain your repo's copyright date(s) and license
     .. _setup_steps:
 
 4. Now you can begin a cycle of adding/editing files, building locally, and pushing to GitHub. The configuration settings above should trigger automatic RtD builds with every commit or PR, but you can always manually build the docs site from your RtD dashboard.
+
+^^^^^^
+Images
+^^^^^^
+
+Adding inline images to your documentation is as simple as saving, then referencing, the image file at the proper level of the repo directory. This repo's images reside in the ``/docs`` folder.
+
+* Favicon (displays in the browser tab): In the ``confy.py`` file, add the image file name::
+
+    html_favicon = 'OS-icon-color.png'
+
+* Home image (displays in the top left corner): Also in the ``confy.py`` file::
+
+    html_logo = 'OS-logo-horizontal-white.png'
+
+* Inline image, for which you can specify dimensions and alignment::
+
+    .. image:: OS-inline-example.png
+        :width: 400px
+        :align: center
+
+.. image:: OS-inline-example.png
+        :width: 400px
+        :align: center
