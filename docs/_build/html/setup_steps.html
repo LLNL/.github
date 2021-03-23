@@ -38,7 +38,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Resources" href="resources.html" />
+    <link rel="next" title="RtD &amp; Sphinx Resources" href="resources.html" />
     <link rel="prev" title="LLNL RtD Template" href="index.html" /> 
 </head>
 
@@ -94,10 +94,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#b-install-sphinx">B. Install Sphinx</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#c-build-and-configure-doc-files">C. Build and Configure Doc Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#d-establish-webhook-integration">D. Establish Webhook Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#e-create-and-populate-rst-files">E. Create and Populate .rst Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#e-create-and-populate-rst-files">E. Create and Populate .rst Files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#images">Images</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">RtD &amp; Sphinx Resources</a></li>
 </ul>
 
             
@@ -165,7 +168,7 @@
             
   <div class="section" id="steps-for-setting-up-docs">
 <span id="setup-steps"></span><h1>Steps for Setting up Docs<a class="headerlink" href="#steps-for-setting-up-docs" title="Permalink to this headline">¶</a></h1>
-<p>The process of creating a Read the Docs (RtD) site is widely documented (see also <a class="reference internal" href="resources.html#resources"><span class="std std-ref">Resources</span></a>), though your local environment will introduce variables. The examples that follow use <code class="docutils literal notranslate"><span class="pre">pipenv</span></code> as one variation.</p>
+<p>The process of creating a Read the Docs (RtD) site is widely documented (see also <a class="reference internal" href="resources.html#resources"><span class="std std-ref">RtD &amp; Sphinx Resources</span></a>), though your local environment will introduce variables. The examples that follow use <code class="docutils literal notranslate"><span class="pre">pipenv</span></code> as one variation.</p>
 <p>The basic steps are:</p>
 <ol class="upperalpha simple">
 <li><p>Create repo on GitHub or create local directory to existing repo</p></li>
@@ -184,9 +187,9 @@
 <li><p>Create a <strong>/docs</strong> folder in your project. Then <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">docs</span></code> to complete most of the remaining steps (exceptions are noted below).</p></li>
 <li><p>Install <a class="reference external" href="https://github.com/readthedocs/sphinx_rtd_theme">RtD template from GitHub</a> using Sphinx (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span> <span class="pre">sphinx-rtd-theme</span></code>).</p></li>
 <li><p>Initiate Sphinx quickstart (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">sphinx-quickstart</span></code>). Answer the questions that follow installation, such as selecting No for setting up build and source separately.</p></li>
-<li><p>Move the makefile into the /docs folder if it’s not there already.</p></li>
+<li><p>Move the makefile into the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder if it’s not there already.</p></li>
 <li><p>Confirm the Sphinx version (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">sphinx-build</span> <span class="pre">--version</span></code>).</p></li>
-<li><p>Confirm that docs can build locally (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">make</span> <span class="pre">html</span></code>). You must be in the /docs directory for this to work.</p></li>
+<li><p>Confirm that docs can build locally (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">make</span> <span class="pre">html</span></code>). You must be in the /docs directory for this to work. Unlike viewing a site on a local port, where newly saved changes auto-regenerate the site, you will need to run this command after every saved change in order to see the new change.</p></li>
 </ol>
 </div>
 <div class="section" id="c-build-and-configure-doc-files">
@@ -198,8 +201,8 @@
 </pre></div>
 </div>
 </li>
-<li><p>Create the <strong>.gitignore</strong> file (<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">.gitignore</span></code>) so your commits will include only source files, not the HTML-rendered files (<a class="reference external" href="https://help.github.com/en/articles/ignoring-files">instructions</a>).</p></li>
-<li><p>Create the <strong>requirements.txt</strong> file to specify dependency versions (<a class="reference external" href="https://docs.readthedocs.io/en/stable/config-file/v2.html?highlight=requirements.txt#requirements-file">instructions</a>). This file usually contains information like this:</p>
+<li><p>Create the <strong>.gitignore</strong> file (<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">.gitignore</span></code>) so your commits will include only source files, not the HTML-rendered files (<a class="reference external" href="https://help.github.com/en/articles/ignoring-files">GitHub instructions</a>).</p></li>
+<li><p>Create the <strong>requirements.txt</strong> file to specify dependency versions (<a class="reference external" href="https://docs.readthedocs.io/en/stable/config-file/v2.html?highlight=requirements.txt#requirements-file">RtD instructions</a>). This file usually contains information like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># These dependencies should be installed using pip in order</span>
 <span class="c1"># to build the documentation.</span>
 
@@ -254,6 +257,30 @@
 </li>
 <li><p>Now you can begin a cycle of adding/editing files, building locally, and pushing to GitHub. The configuration settings above should trigger automatic RtD builds with every commit or PR, but you can always manually build the docs site from your RtD dashboard.</p></li>
 </ol>
+<div class="section" id="images">
+<h3>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h3>
+<p>Adding inline images to your documentation is as simple as saving, then referencing, the image file at the proper level of the repo directory. This repo’s images reside in the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder.</p>
+<ul>
+<li><p>Favicon (displays in the browser tab): In the <code class="docutils literal notranslate"><span class="pre">confy.py</span></code> file, add the image file name:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_favicon</span> <span class="o">=</span> <span class="s1">&#39;OS-icon-color.png&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Home image (displays in the top left corner): Also in the <code class="docutils literal notranslate"><span class="pre">confy.py</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;OS-logo-horizontal-white.png&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Inline image, for which you can specify dimensions and alignment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">OS</span><span class="o">-</span><span class="n">inline</span><span class="o">-</span><span class="n">example</span><span class="o">.</span><span class="n">png</span>
+    <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">400</span><span class="n">px</span>
+    <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/OS-inline-example.png"><img alt="_images/OS-inline-example.png" class="align-center" src="_images/OS-inline-example.png" style="width: 400px;" /></a>
+</div>
 </div>
 </div>
 
@@ -265,7 +292,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="resources.html" class="btn btn-neutral float-right" title="Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="resources.html" class="btn btn-neutral float-right" title="RtD &amp; Sphinx Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="LLNL RtD Template" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
