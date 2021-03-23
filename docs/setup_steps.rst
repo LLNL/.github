@@ -69,7 +69,7 @@ This process generates a **readthedocs.io** URL for your project, which you can 
 
 6. Confirm that docs still build locally, then open and merge PR.
 7. On your RtD dashboard, select the project and initiate a build to test: Projects > your repo > Builds > Build Version.
-8. You may want to change some of RtD's advanced settings, such as specifying which version is considered "latest" or which branch is the default. Projects > your repo > Admin > Advanced Settings. 
+8. You may want to change some of RtD's advanced settings, such as specifying which version is considered "latest" or which branch is the default. Don't forget to update this area if you change the name of your default branch (e.g., ``master`` to ``main``). Projects > your repo > Admin > Advanced Settings. 
 
 ---------------------------------
 E. Create and Populate .rst Files
