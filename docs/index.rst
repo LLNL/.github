@@ -1,4 +1,4 @@
-.. Copyright 2020 Lawrence Livermore National Security, LLC
+.. Copyright 2021 Lawrence Livermore National Security, LLC
 
 =================
 LLNL RtD Template
@@ -11,4 +11,5 @@ This documentation site and the files associated with the `.github repo <https:/
    :caption: Contents:
 
    setup_steps
+   contribute
    resources
