@@ -1,4 +1,4 @@
-.. Copyright 2020 Lawrence Livermore National Security, LLC
+.. Copyright 2021 Lawrence Livermore National Security, LLC
 
 .. _setup_steps:
 
@@ -25,16 +25,18 @@ The instructions below assume that developers understand step *A*.
 -----------------
 B. Install Sphinx
 -----------------
+
 1. Create a **/docs** folder in your project. Then ``cd docs`` to complete most of the remaining steps (exceptions are noted below).
 2. Install `RtD template from GitHub <https://github.com/readthedocs/sphinx_rtd_theme>`_ using Sphinx (``pipenv install sphinx-rtd-theme``).
 3. Initiate Sphinx quickstart (``pipenv run sphinx-quickstart``). Answer the questions that follow installation, such as selecting No for setting up build and source separately.
 4. Move the makefile into the ``/docs`` folder if it's not there already.
 5. Confirm the Sphinx version (``pipenv run sphinx-build --version``).
-6. Confirm that docs can build locally (``pipenv run make html``). You must be in the /docs directory for this to work. Unlike viewing a site on a local port, where newly saved changes auto-regenerate the site, you will need to run this command after every saved change in order to see the new change.
+6. Confirm that docs can build locally (``pipenv run make html``). You must be in the ``/docs`` directory for this to work. Unlike viewing a site on a local port, where newly saved changes auto-regenerate the site, you will need to run this command after every saved change in order to see the new change.
 
 --------------------------------
 C. Build and Configure Doc Files
 --------------------------------
+
 1. Update the **conf.py** file. For instance, you can change the RtD theme (``html_theme``). In the General Configuration section, add the name of master .rst file::
 
     # Tells Sphinx the name of the master .rst file.
@@ -57,6 +59,7 @@ C. Build and Configure Doc Files
 --------------------------------
 D. Establish Webhook Integration
 --------------------------------
+
 This process generates a **readthedocs.io** URL for your project, which you can then link to in your repo's README file.
 
 1. Log into the `RtD website <https://readthedocs.org/>`_ via your GitHub account. You will have to go through an account verification process the first time.
@@ -74,6 +77,7 @@ This process generates a **readthedocs.io** URL for your project, which you can 
 ---------------------------------
 E. Create and Populate .rst Files
 ---------------------------------
+
 All documentation files should contain your repo's copyright date(s) and license information at the top, set off by two periods (``..``).
 
 1. Create the **index.rst** file (or whatever file name you specified as the master file in step *C1* above).
@@ -98,15 +102,15 @@ Images
 
 Adding inline images to your documentation is as simple as saving, then referencing, the image file at the proper level of the repo directory. This repo's images reside in the ``/docs`` folder.
 
-* Favicon (displays in the browser tab): In the ``confy.py`` file, add the image file name::
+*Favicon* (displays in the browser tab): In the ``confy.py`` file, add the image file name::
 
     html_favicon = 'OS-icon-color.png'
 
-* Home image (displays in the top left corner): Also in the ``confy.py`` file::
+*Home image* (displays in the top left corner): Also in the ``confy.py`` file::
 
     html_logo = 'OS-logo-horizontal-white.png'
 
-* Inline image, for which you can specify dimensions and alignment::
+*Inline image*, for which you can specify dimensions and alignment::
 
     .. image:: OS-inline-example.png
         :width: 400px
