@@ -1,73 +1,35 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Steps for Setting up Docs &mdash; LLNL RtD Template  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/OS-icon-color.png"/>
-  
-  
-  
-
-  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="RtD &amp; Sphinx Resources" href="resources.html" />
+    <link rel="next" title="Contribute to Existing Docs" href="contribute.html" />
     <link rel="prev" title="LLNL RtD Template" href="index.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html">
-          
-
-          
-            
             <img src="_static/OS-logo-horizontal-white.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -75,126 +37,77 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Steps for Setting up Docs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#a-create-repo-directory">A. Create Repo/Directory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#b-install-sphinx">B. Install Sphinx</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#c-build-and-configure-doc-files">C. Build and Configure Doc Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d-establish-webhook-integration">D. Establish Webhook Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#e-create-and-populate-rst-files">E. Create and Populate .rst Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-repo-directory">1. Create Repo/Directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-sphinx">2. Install Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-and-configure-doc-files">3. Build and Configure Doc Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#establish-webhook-integration">4. Establish Webhook Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-and-populate-rst-files">5. Create and Populate .rst Files</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#images">Images</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">RtD &amp; Sphinx Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute to Existing Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Documentation Resources</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">LLNL RtD Template</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Steps for Setting up Docs</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/setup_steps.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="section" id="steps-for-setting-up-docs">
-<span id="setup-steps"></span><h1>Steps for Setting up Docs<a class="headerlink" href="#steps-for-setting-up-docs" title="Permalink to this headline">¶</a></h1>
-<p>The process of creating a Read the Docs (RtD) site is widely documented (see also <a class="reference internal" href="resources.html#resources"><span class="std std-ref">RtD &amp; Sphinx Resources</span></a>), though your local environment will introduce variables. The examples that follow use <code class="docutils literal notranslate"><span class="pre">pipenv</span></code> as one variation.</p>
+<span id="setup-steps"></span><h1>Steps for Setting up Docs<a class="headerlink" href="#steps-for-setting-up-docs" title="Permalink to this headline"></a></h1>
+<p>The process of creating a Read the Docs (RtD) site is widely documented (see also <a class="reference internal" href="resources.html#resources"><span class="std std-ref">Documentation Resources</span></a>), though your local environment will introduce variables. The examples that follow use <code class="docutils literal notranslate"><span class="pre">pipenv</span></code> as one variation.</p>
 <p>The basic steps are:</p>
-<ol class="upperalpha simple">
+<ol class="arabic simple">
 <li><p>Create repo on GitHub or create local directory to existing repo</p></li>
 <li><p>Install Sphinx</p></li>
 <li><p>Build and configure doc files</p></li>
 <li><p>Set up GitHub and RtD webhook integration</p></li>
 <li><p>Create .rst files</p></li>
 </ol>
-<div class="section" id="a-create-repo-directory">
-<h2>A. Create Repo/Directory<a class="headerlink" href="#a-create-repo-directory" title="Permalink to this headline">¶</a></h2>
-<p>The instructions below assume that developers understand step <em>A</em>.</p>
+<div class="section" id="create-repo-directory">
+<h2>1. Create Repo/Directory<a class="headerlink" href="#create-repo-directory" title="Permalink to this headline"></a></h2>
+<p>The instructions below assume that developers understand step 1.</p>
 </div>
-<div class="section" id="b-install-sphinx">
-<h2>B. Install Sphinx<a class="headerlink" href="#b-install-sphinx" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
+<div class="section" id="install-sphinx">
+<h2>2. Install Sphinx<a class="headerlink" href="#install-sphinx" title="Permalink to this headline"></a></h2>
+<ul class="simple">
 <li><p>Create a <strong>/docs</strong> folder in your project. Then <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">docs</span></code> to complete most of the remaining steps (exceptions are noted below).</p></li>
 <li><p>Install <a class="reference external" href="https://github.com/readthedocs/sphinx_rtd_theme">RtD template from GitHub</a> using Sphinx (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span> <span class="pre">sphinx-rtd-theme</span></code>).</p></li>
 <li><p>Initiate Sphinx quickstart (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">sphinx-quickstart</span></code>). Answer the questions that follow installation, such as selecting No for setting up build and source separately.</p></li>
 <li><p>Move the makefile into the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder if it’s not there already.</p></li>
 <li><p>Confirm the Sphinx version (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">sphinx-build</span> <span class="pre">--version</span></code>).</p></li>
-<li><p>Confirm that docs can build locally (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">make</span> <span class="pre">html</span></code>). You must be in the /docs directory for this to work. Unlike viewing a site on a local port, where newly saved changes auto-regenerate the site, you will need to run this command after every saved change in order to see the new change.</p></li>
-</ol>
+<li><p>Confirm that docs can build locally (<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">run</span> <span class="pre">make</span> <span class="pre">html</span></code>). You must be in the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> directory for this to work. Unlike viewing a site on a local port, where newly saved changes auto-regenerate the site, you will need to run this command after every saved change in order to see the new change.</p></li>
+</ul>
 </div>
-<div class="section" id="c-build-and-configure-doc-files">
-<h2>C. Build and Configure Doc Files<a class="headerlink" href="#c-build-and-configure-doc-files" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
+<div class="section" id="build-and-configure-doc-files">
+<h2>3. Build and Configure Doc Files<a class="headerlink" href="#build-and-configure-doc-files" title="Permalink to this headline"></a></h2>
+<ul>
 <li><p>Update the <strong>conf.py</strong> file. For instance, you can change the RtD theme (<code class="docutils literal notranslate"><span class="pre">html_theme</span></code>). In the General Configuration section, add the name of master .rst file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tells Sphinx the name of the master .rst file.</span>
 <span class="n">master_doc</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span>
@@ -206,21 +119,21 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># These dependencies should be installed using pip in order</span>
 <span class="c1"># to build the documentation.</span>
 
-<span class="n">sphinx</span><span class="o">==</span><span class="mf">2.0</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">sphinx</span><span class="o">==</span><span class="mf">2.0.1</span>
 <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">programoutput</span><span class="o">==</span><span class="mf">0.14</span>
-<span class="n">sphinx</span><span class="o">-</span><span class="n">rtd</span><span class="o">-</span><span class="n">theme</span><span class="o">==</span><span class="mf">0.4</span><span class="o">.</span><span class="mi">3</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">rtd</span><span class="o">-</span><span class="n">theme</span><span class="o">==</span><span class="mf">0.4.3</span>
 <span class="n">python</span><span class="o">-</span><span class="n">levenshtein</span>
 </pre></div>
 </div>
 </li>
-<li><p>Create the <strong>.readthedocs.yml</strong> file in the <em>top directory</em> of the repo. Paste in the <a class="reference external" href="https://docs.readthedocs.io/en/stable/config-file/v2.html">V2 content</a>.</p></li>
+<li><p>Create the <strong>.readthedocs.yml</strong> file in the <em>top directory</em> of the repo. Paste in the <a class="reference external" href="https://docs.readthedocs.io/en/stable/config-file/v2.html">V2 content</a>.</p></li>
 <li><p>Commit configuration changes, then open and merge PR before moving on.</p></li>
-</ol>
+</ul>
 </div>
-<div class="section" id="d-establish-webhook-integration">
-<h2>D. Establish Webhook Integration<a class="headerlink" href="#d-establish-webhook-integration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="establish-webhook-integration">
+<h2>4. Establish Webhook Integration<a class="headerlink" href="#establish-webhook-integration" title="Permalink to this headline"></a></h2>
 <p>This process generates a <strong>readthedocs.io</strong> URL for your project, which you can then link to in your repo’s README file.</p>
-<ol class="arabic">
+<ul>
 <li><p>Log into the <a class="reference external" href="https://readthedocs.org/">RtD website</a> via your GitHub account. You will have to go through an account verification process the first time.</p></li>
 <li><p>My Projects &gt; Import a Project &gt; select your repo. You may need to refresh the list or filter out an organization.</p></li>
 <li><p>Enter repo name and GitHub URL if not pre-populated. Confirm <strong>.git</strong> is appended to the end of the URL.</p></li>
@@ -232,13 +145,13 @@
 </li>
 <li><p>Confirm that docs still build locally, then open and merge PR.</p></li>
 <li><p>On your RtD dashboard, select the project and initiate a build to test: Projects &gt; your repo &gt; Builds &gt; Build Version.</p></li>
-<li><p>You may want to change some of RtD’s advanced settings, such as specifying which version is considered “latest” or which branch is the default. Projects &gt; your repo &gt; Admin &gt; Advanced Settings.</p></li>
-</ol>
+<li><p>You may want to change some of RtD’s advanced settings, such as specifying which version is considered “latest” or which branch is the default. Don’t forget to update this area if you change the name of your default branch (e.g., <code class="docutils literal notranslate"><span class="pre">master</span></code> to <code class="docutils literal notranslate"><span class="pre">main</span></code>). Projects &gt; your repo &gt; Admin &gt; Advanced Settings.</p></li>
+</ul>
 </div>
-<div class="section" id="e-create-and-populate-rst-files">
-<h2>E. Create and Populate .rst Files<a class="headerlink" href="#e-create-and-populate-rst-files" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="create-and-populate-rst-files">
+<h2>5. Create and Populate .rst Files<a class="headerlink" href="#create-and-populate-rst-files" title="Permalink to this headline"></a></h2>
 <p>All documentation files should contain your repo’s copyright date(s) and license information at the top, set off by two periods (<code class="docutils literal notranslate"><span class="pre">..</span></code>).</p>
-<ol class="arabic">
+<ul>
 <li><p>Create the <strong>index.rst</strong> file (or whatever file name you specified as the master file in step <em>C1</em> above).</p></li>
 <li><p>Set up table of contents (TOC), specifying how many levels deep you want to expose. For example, this site’s TOC looks like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
@@ -256,29 +169,24 @@
 </div>
 </li>
 <li><p>Now you can begin a cycle of adding/editing files, building locally, and pushing to GitHub. The configuration settings above should trigger automatic RtD builds with every commit or PR, but you can always manually build the docs site from your RtD dashboard.</p></li>
-</ol>
+</ul>
 <div class="section" id="images">
-<h3>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h3>
+<h3>Images<a class="headerlink" href="#images" title="Permalink to this headline"></a></h3>
 <p>Adding inline images to your documentation is as simple as saving, then referencing, the image file at the proper level of the repo directory. This repo’s images reside in the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder.</p>
-<ul>
-<li><p>Favicon (displays in the browser tab): In the <code class="docutils literal notranslate"><span class="pre">confy.py</span></code> file, add the image file name:</p>
+<p><em>Favicon</em> (displays in the browser tab); in the <code class="docutils literal notranslate"><span class="pre">confy.py</span></code> file, add the image file name:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_favicon</span> <span class="o">=</span> <span class="s1">&#39;OS-icon-color.png&#39;</span>
 </pre></div>
 </div>
-</li>
-<li><p>Home image (displays in the top left corner): Also in the <code class="docutils literal notranslate"><span class="pre">confy.py</span></code> file:</p>
+<p><em>Home image</em> (displays in the top left corner), also in the <code class="docutils literal notranslate"><span class="pre">confy.py</span></code> file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;OS-logo-horizontal-white.png&#39;</span>
 </pre></div>
 </div>
-</li>
-<li><p>Inline image, for which you can specify dimensions and alignment:</p>
+<p><em>Inline image</em>, for which you can specify dimensions and alignment:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">OS</span><span class="o">-</span><span class="n">inline</span><span class="o">-</span><span class="n">example</span><span class="o">.</span><span class="n">png</span>
     <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">400</span><span class="n">px</span>
     <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
 </pre></div>
 </div>
-</li>
-</ul>
 <a class="reference internal image-reference" href="_images/OS-inline-example.png"><img alt="_images/OS-inline-example.png" class="align-center" src="_images/OS-inline-example.png" style="width: 400px;" /></a>
 </div>
 </div>
@@ -286,58 +194,33 @@
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="resources.html" class="btn btn-neutral float-right" title="RtD &amp; Sphinx Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="LLNL RtD Template" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="LLNL RtD Template" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contribute.html" class="btn btn-neutral float-right" title="Contribute to Existing Docs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2020, LLNL Open Source
-
-    </p>
+    <p>&#169; Copyright 2022, LLNL Open Source.</p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
