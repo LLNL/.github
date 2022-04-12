@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'LLNL RtD Template'
-copyright = '2020, LLNL Open Source'
+copyright = '2022, LLNL Open Source'
 author = 'LLNL Open Source'
 
 
