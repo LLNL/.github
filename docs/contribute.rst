@@ -1,4 +1,4 @@
-.. Copyright 2020 Lawrence Livermore National Security, LLC
+.. Copyright 2022 Lawrence Livermore National Security, LLC
 
 .. _contribute:
 
@@ -13,7 +13,7 @@ Install requirements.txt
 ------------------------
 After forking/cloning the repo normally, locate the ``requirements.txt`` file in the project directory and navigate into that folder.
 
-1. Create a virtual environment for the repo's docs::
+Create a virtual environment for the repo's docs::
 
     $ pipenv install -r requirements.txt
 
@@ -22,7 +22,7 @@ After forking/cloning the repo normally, locate the ``requirements.txt`` file in
     * An error means a requirement is missing from your system or you are not in the correct directory.
     * A repo's *gemfile* says what you need to install; the *lockfile* conveys the particular versions needed.
 
-2. Activate the virtual environment::
+Activate the virtual environment::
 
     $ pipenv shell
 
@@ -56,4 +56,4 @@ When Finished Editing
 
 You may want to update your ``.gitignore`` file with any changes to system files that you do not want committed.
 
-Exit the virtual environment before switching to another repo by pressing ``ctrl-d``. *If you don't do this*, repo B will look at the requirements in repo A instead of finding its own.
+Exit the virtual environment before switching to another repo by pressing ``ctrl-d``. *If you don't do this, repo B will look at the requirements in repo A instead of finding its own.*
