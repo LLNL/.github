@@ -1,4 +1,4 @@
-.. Copyright 2021 Lawrence Livermore National Security, LLC
+.. Copyright 2022 Lawrence Livermore National Security, LLC
 
 .. _resources:
 
