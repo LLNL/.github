@@ -1,4 +1,4 @@
-.. Copyright 2021 Lawrence Livermore National Security, LLC
+.. Copyright 2022 Lawrence Livermore National Security, LLC
 
 =================
 LLNL RtD Template
@@ -13,3 +13,7 @@ This documentation site and the files associated with the `.github repo <https:/
    setup_steps
    contribute
    resources
+
+.. note::
+
+   This site is running Sphinx v2.0.1 but downgraded to Docutils v0.16 for ``sphinx_rtd_theme``. Docutils v0.17 has a `bug <https://github.com/readthedocs/sphinx_rtd_theme/issues/1115>`_ in which bulleted (unordered) lists are not rendered properly.
