@@ -10,7 +10,9 @@ This release includes several news features, such as:
 - Etc.
 
 Learn more:
-- Release notes (link to GH release tag)
-- GitHub repo (GH link)
-- Documentation/user guide/tutorial (link)
+- Project vX.X.X release notes (link to GH release tag)
+- Project GitHub repo (GH link)
+- Project documentation/user guide/tutorial (link)
 - Any other related link (e.g., news article, video, web page)
+
+*Note:* Link text must be unique, or else the News pages (where posts are viewed in aggregate) will not be accessible to all users. For example, put the project name and version number in the link text for the release notes.
