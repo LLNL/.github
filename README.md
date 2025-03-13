@@ -16,3 +16,5 @@ This repository houses file templates and other content that can be used by LLNL
 * [Read the Docs template](https://github-main.readthedocs.io/en/latest/) (using Sphinx v3.1.2)
 
  These resources are intended to be *descriptive* rather than *prescriptive*&mdash;projects vary widely in requirements, preferences, and styles&mdash;although LLNL repos do need to adhere to certain guidelines regarding licenses and other aspects of releasing and maintaining open source software. For more information, see the [LLNL Software Catalog's FAQ](https://software.llnl.gov/about/faq/) or contact [github-admin@llnl.gov](mailto:github-admin@llnl.gov).
+
+Include the release number in the README file: LLNL-CODE-xxxxxx
