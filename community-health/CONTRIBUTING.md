@@ -10,7 +10,7 @@ The outline below contains generic sample language as well as a few blanks `____
 
 As you create your contributor guidelines, consider the associated logistics, file organization, naming conventions, and other similar details. For example, what information should each pull request or issue include? How do you want bugs reported? What about testing? Just as an email with a vague subject line is frustrating and unhelpful, so too is a PR with poorly named commits. Another analogy: Just as you don't know what to expect in a meeting invitation without an agenda, the same goes for a bug that's reported without enough information to recreate the problem.
 
-## Example Contributing Guidelines
+## Example of Contributing Guidelines
 
 `_____` is an open source project. We welcome contributions via pull requests as well as questions, feature requests, or bug reports via issues. Contact our team at `_____` with any questions. Please also refer to our [code of conduct](https://github.com/LLNL/.github/tree/master/community-health/CODE_OF_CONDUCT.md).
 
